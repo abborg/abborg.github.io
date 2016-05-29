@@ -9,8 +9,6 @@
 
     <div class="page-content">
       <div class="wrapper">
-          <h1 class="page-heading">Posts</h1>
-          {{ content }}
           <ul class="post-list">
             {% for post in site.posts %}
               <li>
@@ -19,6 +17,13 @@
                 <h2>
                   <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
                 </h2>
+                <p>
+                  {{ post.excerpt }}
+                </p>
+                <h4><a href="{{ post.url | prepend: site.baseurl }}">
+                  Read More!
+                  </a>
+                </h4>
               </li>
             {% endfor %}
           </ul>
