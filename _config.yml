@@ -13,13 +13,11 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://abborg.github.io" # the base hostname & protocol for your site
 github_username:  abborg
+github_avatar: "https://avatars2.githubusercontent.com/u/5313400"
 
 # Build settings
 markdown: kramdown
 highlights: rouge
-
-gems:
-  - jekyll-avatar
 
 collections:
   projects:
