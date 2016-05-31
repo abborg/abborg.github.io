@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}
+
+    <div class="page-content">
+      <div class="wrapper">
+        {{ content }}
+          <div class="post-list">
+            {% for project in site.projects %}
+            <div style="display:inline-block; height:300px; width:300px;overflow:hidden;">
+                {% include card.html %}
+                <h2>
+                  <a class="post-link" href="{{ project.url | prepend: site.baseurl }}">{{ project.title }}</a>
+                </h2>
+              </div>
+            {% endfor %}
+        </div>
+      </div>
+    </div>
+
+    {% include footer.html %}
+
+  </body>
+
+</html>

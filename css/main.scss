@@ -59,3 +59,12 @@ a, a.active, a.visited, a.hover {
 	font-weight: bold;
 	text-decoration: underline;
 }
+
+.project-card {
+	height: 200px;
+	width: 200px;
+	border-radius: 10px;
+	border: $grey-color-dark 3px solid;
+	box-shadow: 1px 1px 1px 1px $grey-color;
+	overflow: hidden;
+}

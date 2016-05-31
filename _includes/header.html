@@ -2,6 +2,11 @@
 
   <div class="wrapper">
 
+    <div style="margin:0.5em;bottom;float:left;display:inline-block;border-radius:2px;border:2px solid #898989">
+    {% if site.github_username %}
+      {% avatar {{ site.github_username }} %}
+    {% endif %}
+    </div>
     <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
 
     <nav class="site-nav">

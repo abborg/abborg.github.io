@@ -4,12 +4,36 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+I'm Andrew Borg. I'm a student of many fields and I see knowledge as a meme to be meme'd. If you'd like to reach out to me, shoot me an email at [andrew.b.borg@gmail.com](andrew.b.borg@gmail.com).
 
-You can find the source code for the Jekyll new theme at:
-{% include icon-github.html username="jglovier" %} /
-[jekyll-new](https://github.com/jglovier/jekyll-new)
+------
 
-You can find the source code for Jekyll at
-{% include icon-github.html username="jekyll" %} /
-[jekyll](https://github.com/jekyll/jekyll)
+## Experience
+
+### Software Developer
+
+#### Infinite Convergence Solutions 
+
+##### &nbsp;&nbsp;&nbsp; **May 2015 to August 2015**
+
+##### &nbsp;&nbsp;&nbsp;&nbsp; >> **NetSfere:**
+
+##### &nbsp;&nbsp;&nbsp;&nbsp; >> **NetSfere-Help:**
+
+#### The Dow Chemical Company
+
+##### &nbsp;&nbsp;&nbsp; **January 2013 to December 2013**
+
+##### &nbsp;&nbsp;&nbsp;&nbsp; >> **PIMIC:** 
+
+### Other Experience
+
+#### Montini Catholic High School
+
+##### &nbsp;&nbsp;&nbsp; May 2014 to December 2014
+
+## Technologies
+
+#### Proficient with:
+
+#### Familiar with:

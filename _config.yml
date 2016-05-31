@@ -17,3 +17,11 @@ github_username:  abborg
 # Build settings
 markdown: kramdown
 highlights: rouge
+
+gems:
+  - jekyll-avatar
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:title
