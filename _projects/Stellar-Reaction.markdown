@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "Foodtime"
-name:  "Foodtime"
-date:   2014-12-10 22:15:18 -0500
+title:  "Stellar Reaction"
+name:  "Stellar-Reaction"
+date:   2016-5-19 22:15:18 -0500
 status: 2
-categories: Android
+categories: C++
 ---
 
 Hey there, this isn't really finished yet, wipe your feet on the css!

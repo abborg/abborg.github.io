@@ -4,36 +4,54 @@ title: About
 permalink: /about/
 ---
 
+<div id="resume" markdown="1">
+
 I'm Andrew Borg. I'm a student of many fields and I see knowledge as a meme to be meme'd. If you'd like to reach out to me, shoot me an email at [andrew.b.borg@gmail.com](andrew.b.borg@gmail.com).
 
 ------
 
-## Experience
+&nbsp;
+  
+# Experience
 
-### Software Developer
+## Software Developer
 
-#### Infinite Convergence Solutions 
+### Infinite Convergence Solutions  
 
-##### &nbsp;&nbsp;&nbsp; **May 2015 to August 2015**
+#### May 2015 to August 2015
 
-##### &nbsp;&nbsp;&nbsp;&nbsp; >> **NetSfere:**
+**NetSfere:** Secure Messaging App for Busniesses 
 
-##### &nbsp;&nbsp;&nbsp;&nbsp; >> **NetSfere-Help:**
+ * Developed new REST services to expose API
+ * Utilized powerful regular expressions to enhance user messages
+ * Refactored user interface for greater extensibility
 
-#### The Dow Chemical Company
+**NetSfere-Help:** Knowledge base for the NetSfere app  
 
-##### &nbsp;&nbsp;&nbsp; **January 2013 to December 2013**
+- Set up and established knowledge base using open source software  
+- Produced documentation for knowledge base  
+- Created troubleshooting guides and support articles for users  
 
-##### &nbsp;&nbsp;&nbsp;&nbsp; >> **PIMIC:** 
+### The Dow Chemical Company
 
-### Other Experience
+#### January 2013 to December 2013
 
-#### Montini Catholic High School
+**PIMIC:** Chemical interaction simulation program updated from Fortran
 
-##### &nbsp;&nbsp;&nbsp; May 2014 to December 2014
+- Developed Web application using ASP.NET MVC framework
+- Created new user interface using JQuery and KnockoutJS
+- Provided useful data presentation to users with Highcharts
+
+## Other Experience
+
+### Montini Catholic High School
+
+#### May 2014 to December 2014
 
 ## Technologies
 
-#### Proficient with:
+#### **Proficient with:** Windows and Linux Operating Systems, Java, Javascript, CSS, HTML, C, C#, C++, JQuery, Knockoutjs, Angularjs, Visual Studio, Microsoft Office and Adobe Creative Suites
 
-#### Familiar with:
+#### **Familiar with:** Perl, MySQL, Ruby, Mathematica
+
+</div>

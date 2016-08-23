@@ -60,11 +60,38 @@ a, a.active, a.visited, a.hover {
 	text-decoration: underline;
 }
 
-.project-card {
-	height: 200px;
-	width: 200px;
-	border-radius: 10px;
-	border: $grey-color-dark 3px solid;
-	box-shadow: 1px 1px 1px 1px $grey-color;
-	overflow: hidden;
+.project-card img {
+	border-radius: 50%;
+}
+
+#resume ul {
+	margin-left: 50px;
+}
+
+#resume li {
+	font-size: 9pt;
+}
+
+#resume h1 {
+	font-size: 20pt;
+}
+
+#resume h2 {
+	font-size: 16pt;
+	margin: 4px 10px;
+}
+
+#resume h3 {
+	font-size: 12pt;
+	margin: 4px 18px;
+}
+
+#resume h4 {
+	font-size: 9pt;
+	margin: 4px 18px;
+}
+
+#resume p {
+	font-size: 10pt;
+	margin: 4px 18px;
 }

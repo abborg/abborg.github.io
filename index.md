@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: index
 ---
   Hello Friends, I'm a memer, and you can to!
 
