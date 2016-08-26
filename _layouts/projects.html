@@ -10,12 +10,9 @@
     <div class="page-content">
       <div class="wrapper">
         {{ content }}
-          <div class="post-list">
+          <div class="project-list">
             {% for project in site.projects %}
-            <div style="display:inline-block; max-height:300px; max-width:300px;overflow:hidden;">
-                {% include card.html %}
-                <h2>
-            </div>
+                {% include slice.html %}
             {% endfor %}
         </div>
       </div>

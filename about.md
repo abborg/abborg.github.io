@@ -12,13 +12,13 @@ I'm Andrew Borg. I'm a student of many fields and I see knowledge as a meme to b
 
 &nbsp;
   
-# Experience
+## Experience
 
-## Software Developer
+### Software Developer
 
-### Infinite Convergence Solutions  
+#### Infinite Convergence Solutions  
 
-#### May 2015 to August 2015
+##### May 2015 to August 2015
 
 **NetSfere:** Secure Messaging App for Busniesses 
 
@@ -32,9 +32,9 @@ I'm Andrew Borg. I'm a student of many fields and I see knowledge as a meme to b
 - Produced documentation for knowledge base  
 - Created troubleshooting guides and support articles for users  
 
-### The Dow Chemical Company
+#### The Dow Chemical Company
 
-#### January 2013 to December 2013
+##### January 2013 to December 2013
 
 **PIMIC:** Chemical interaction simulation program updated from Fortran
 
@@ -42,16 +42,16 @@ I'm Andrew Borg. I'm a student of many fields and I see knowledge as a meme to b
 - Created new user interface using JQuery and KnockoutJS
 - Provided useful data presentation to users with Highcharts
 
-## Other Experience
+### Other Experience
 
-### Montini Catholic High School
+#### Montini Catholic High School
 
-#### May 2014 to December 2014
+##### May 2014 to December 2014
 
-## Technologies
+### Technologies
 
-#### **Proficient with:** Windows and Linux Operating Systems, Java, Javascript, CSS, HTML, C, C#, C++, JQuery, Knockoutjs, Angularjs, Visual Studio, Microsoft Office and Adobe Creative Suites
+##### **Proficient with:** Windows and Linux Operating Systems, Java, Javascript, CSS, Sass, HTML, C, C#, C++, JQuery, Knockoutjs, Angularjs, Visual Studio, Microsoft Office and Adobe Creative Suites
 
-#### **Familiar with:** Perl, MySQL, Ruby, Mathematica
+##### **Familiar with:** Perl, MySQL, Ruby, Mathematica
 
 </div>

@@ -33,12 +33,40 @@
     }
 
     .page-link {
+        display: inline-block;
+        position:relative;
+        height: 100%;
         color: $text-color;
-        line-height: $base-line-height;
+        padding: 0 15px;
+
+        &.active {
+            background-color: $active-nav-color;
+            transition: padding 0.5s;
+            &::before {
+                content: '.';
+                position:absolute;
+                left:0;
+                color: transparent;
+                display:inline-block;
+                width: 5px;
+                height: 100%;
+                @include gradient(right, $background-color);
+            }
+            &::after {
+                content: '.';
+                position:absolute;
+                right:0;
+                color: transparent;
+                display:inline-block;
+                width: 5px;
+                height: 100%;
+                @include gradient(left, $background-color);
+            }
+        }
 
         // Gaps between nav items, but not on the last one
         &:not(:last-child) {
-            margin-right: 20px;
+            //margin-right: 20px;
         }
     }
 
@@ -46,7 +74,7 @@
         position: absolute;
         top: 9px;
         right: $spacing-unit / 2;
-        background-color: $background-color;
+        background-color: $other-color-light;
         border: 1px solid $grey-color-light;
         border-radius: 5px;
         text-align: right;
@@ -169,6 +197,7 @@
  */
 .page-content {
     padding: $spacing-unit 0;
+    background-color: $other-color-light;
 }
 
 .page-heading {
