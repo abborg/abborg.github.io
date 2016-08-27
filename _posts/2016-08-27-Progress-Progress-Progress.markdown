@@ -5,9 +5,8 @@ date:   2016-08-27 14:47:00 -0500
 categories: projects Progress things
 ---
 
-Development of any project takes time, dedication, effort, and a little bit of luck.<!--more--> I include luck because all the time, dedication and effort doesn't mean anything if you aren't in a position to leverage that towards 'Progress'.
-
-
+Development of any project takes time, dedication, effort, and a little bit of luck. I include luck because all the time, dedication and effort doesn't mean anything if you aren't in a position to leverage that towards 'Progress'.
+<!--more-->
 Progress is so enticing for many developers nowadays. There exists the question in my mind whether Progress is always 'progressive', or regressive. If one thinks about the nature of things, they come to realize that circumstances can be better or worse; but, sometimes for the position one finds themself in, things can only be so good or so bad. What's important though, is to recognize when Progress is driving a project towards a higher high through a bit of regression rather than working against itself.
 
 ![Local Maxima and Minima](https://upload.wikimedia.org/wikipedia/commons/6/68/Extrema_example_original.svg)
