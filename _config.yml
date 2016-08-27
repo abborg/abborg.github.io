@@ -9,7 +9,7 @@
 title: Andrew Borg
 email: andrew.b.borg@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Programmer, Designer, Memer
+  Programmer, Designer, Developer
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://abborg.github.io" # the base hostname & protocol for your site
 github_username:  abborg

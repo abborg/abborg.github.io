@@ -7,6 +7,10 @@ status: 1
 categories: C#
 ---
 
-Hey there, this isn't really finished yet, wipe your feet on the css!
+G2KM is a small project I've been working on to create a piece of software that allows users to use their gamepads to control their keyboard and mouse on their computer. Through the use of different Windows API, I hope to make it simpler to switch between gaming and normal computer use with a gamepad.
+
+![Gamepad](/images/g2km.jpg)
+
+The project is written in C# and utilizes the Windows messaging API along with the RawInput and DirectInput APIs.
 
 Check out the github repo [here.](http://www.github.com/abborg/G2KM)
