@@ -18,7 +18,7 @@ I'm Andrew Borg. I'm a student of many fields and I see knowledge as a meme to b
 
 #### Infinite Convergence Solutions  
 
-##### May 2015 to August 2015
+##### June 2015 to August 2015
 
 **NetSfere:** Secure Messaging App for Busniesses 
 
@@ -44,9 +44,12 @@ I'm Andrew Borg. I'm a student of many fields and I see knowledge as a meme to b
 
 ### Other Experience
 
-#### Montini Catholic High School
+#### Montini Catholic High School: Technology Consultant
 
-##### May 2014 to December 2014
+##### May 2014 to August 2014
+
+- Extended the wireless infrastructure of the school by expanding wired network and installing access points  
+- Wrote scripts to generate user identifications and credentials
 
 ### Technologies
 
