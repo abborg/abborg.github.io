@@ -99,7 +99,6 @@ $slice-height:	   50px;
 		background-color: $foodtime-color;
 		& a {
 			color: $foodtime-color-light;
-			text-shadow: 1px 1px 2px grey;
 		}
 	}
 }
@@ -110,7 +109,6 @@ $slice-height:	   50px;
 		background-color: $g2km-color;
 		& a {
 			color: $g2km-color-light;
-			text-shadow: 1px 1px 2px grey;
 		}
 	}
 }
@@ -121,7 +119,6 @@ $slice-height:	   50px;
 		background-color: $nocturna-color;
 		& a {
 			color: $nocturna-color-light;
-			text-shadow: 1px 1px 2px grey;
 		}
 	}
 }
@@ -132,7 +129,6 @@ $slice-height:	   50px;
 		background-color: $lotor-color;
 		& a {
 			color: $lotor-color-light;
-			text-shadow: 1px 1px 2px grey;
 		}
 	}
 }
@@ -143,14 +139,13 @@ $slice-height:	   50px;
 		background-color: $stellar-color;
 		& a {
 			color: $stellar-color-light;
-			text-shadow: 1px 1px 2px grey;
 		}
 	}
 }
 
 a, a:hover, a:visited, a:active {
 	color: inherit;
-	transition: color 0.5s, text-shadow 0.5s;
+	transition: color 0.5s;
 }
 
 .project-slice {
@@ -161,6 +156,10 @@ a, a:hover, a:visited, a:active {
 	height: $slice-height;
 	color: $transparent;
 	line-height: $slice-height;
+	&>a:hover {
+		color: grey;
+		text-decoration: none;
+	}
 	&::before {
 		content: ' ';
 		display: block;

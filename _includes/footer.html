@@ -15,7 +15,11 @@
             {% include icon-github.html username=site.github_username %}
           </li>
           {% endif %}
-
+          {% if site.linkedin_url %}
+          <li>
+            {% include icon-linkedin.html name=site.name url=site.linkedin_url %}
+          </li>
+          {% endif%}
         </ul>
       </div>
 
