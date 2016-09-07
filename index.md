@@ -2,8 +2,9 @@
 layout: index
 permalink: /
 ---
-Hello Friends, I'm a memer, and you can to!
+<h1 style="text-align:center;"> Hello, I'm a developer, and you can to!</h1>
 
-Welcome to my page! Sorry, I don't have much in this rather mundane about-me page, but feel free to look at the [blog](/blog) or my [projects](/projects).
+<span style="text-align:center;">Welcome, to my page! You can find a couple of blog posts below or feel free to look at [blog](/blog) or my [projects](/projects).</span>
 
 --------------------
+<br/>

@@ -56,7 +56,7 @@ $nocturna-color-dark:   darken(lightcoral, 5%);
 $stellar-color-dark:	   darken(lightsalmon, 5%);
 $lotor-color-dark:	   darken(lightgoldenrodyellow, 12%);
 
-$slice-height:	   50px;
+$slice-height:	   75px;
 
 // Use media queries like this:
 // @include media-query($on-palm) {
@@ -90,105 +90,8 @@ $slice-height:	   50px;
 @import
         "base",
         "layout",
-        "syntax-highlighting"
+        "syntax-highlighting",
+        "about",
+        "project"
 ;
 
-.Foodtime {
-	background-color: $foodtime-color-light;
-	&:hover {
-		background-color: $foodtime-color;
-		& a {
-			color: $foodtime-color-light;
-		}
-	}
-}
-
-.G2KM {
-	background-color: $g2km-color-light;
-	&:hover {
-		background-color: $g2km-color;
-		& a {
-			color: $g2km-color-light;
-		}
-	}
-}
-
-.Nocturna {
-	background-color: $nocturna-color-light;
-	&:hover {
-		background-color: $nocturna-color;
-		& a {
-			color: $nocturna-color-light;
-		}
-	}
-}
-
-.Lotor-Keyboard {
-	background-color: $lotor-color-light;
-	&:hover {
-		background-color: $lotor-color;
-		& a {
-			color: $lotor-color-light;
-		}
-	}
-}
-
-.Stellar-Reaction {
-	background-color: $stellar-color-light;
-	&:hover {
-		background-color: $stellar-color;
-		& a {
-			color: $stellar-color-light;
-		}
-	}
-}
-
-a, a:hover, a:visited, a:active {
-	color: inherit;
-	transition: color 0.5s;
-}
-
-.project-slice {
-	display:inline-block;
-	position:relative;
-	text-align: center;
-	width: 100%;
-	height: $slice-height;
-	color: $transparent;
-	line-height: $slice-height;
-	&>a:hover {
-		color: grey;
-		text-decoration: none;
-	}
-	&::before {
-		content: ' ';
-		display: block;
-	  	position: absolute;
-	  	width: 20px;
-	  	height: $slice-height;
-	  	top:0;
-	  	left:0;
-	  	@include gradient(right, $other-color-light);
-		transition: width 0.5s;
-	}
-
-	&::after {
-		content: ' ';
-		display: block;
-	 	position: absolute;
-	 	bottom:0;
-	 	right:0;
-	  	width: 20px;
-	  	height: $slice-height;
-	  	@include gradient(left, $other-color-light);
-		transition: width 0.5s;
-	}
-	&:hover {
-		&::before {
-			width: 8px;
-		}
-		&::after {
-			width: 8px;
-		}
-	}
-}
