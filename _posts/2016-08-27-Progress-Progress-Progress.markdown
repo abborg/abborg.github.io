@@ -23,4 +23,4 @@ I think that as developers, designers, and producers, we have to sometimes make 
 
 We want to reach that global maxima - that pinacle of product greatness - but not everything can be the best it can be, as it were. It is important to be okay with something being the best that it _is_, rather than what it _could_ be. The grass may be greener at the global maximum, but you'll have to climb a great ways in order to reach it. 
 
-And sometimes, good enough is just good enough.	
+We have to avoid string towards Progress at all costs, and realize when any 'improvements' to a product would hinder it; because sometimes, good enough is just good enough.	

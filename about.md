@@ -12,6 +12,11 @@ permalink: /about/
 
 <div class="inline-header">
 	<span class="h3 text-left">Infinite Convergence Solutions</span>
+	<em class="text-right">May 2017 to Present</em>
+</div>
+
+<div class="inline-header">
+	<span class="h3 text-left">Infinite Convergence Solutions</span>
 	<em class="text-right">June 2015 to August 2015</em>
 </div>
 
@@ -49,7 +54,7 @@ permalink: /about/
 
 ### Technologies
 
-##### **Proficient with:** Windows and Linux Operating Systems, Java, Javascript, CSS, Sass, HTML, C, C#, C++, JQuery, Knockoutjs, Angularjs, Visual Studio, Microsoft Office and Adobe Creative Suites
+##### **Proficient with:** Windows and Linux Operating Systems, Git, Subversion, Java, Javascript, CSS, HTML, C, C#, C++, JQuery, Knockoutjs, Angularjs, Visual Studio, Microsoft Office and Adobe Creative Suites
 
 ##### **Familiar with:** Perl, MySQL, Ruby, Mathematica
 
@@ -69,13 +74,13 @@ permalink: /about/
 
 <div class="inline-header">
 	<span class="h3 text-left">Bachelor of Science, Computer Science</span>
-	<em class="text-right">Graduating December 2016</em>
+	<em class="text-right">December 2016</em>
 </div>
 <span class="h4 text-left">Concentration in Computer Graphics</span>
 
 <div class="inline-header">
 	<span class="h3 text-left">Bachelor of Science, Engineering Physics</span>
-	<em class="text-right">Graduating December 2016</em>
+	<em class="text-right">December 2016</em>
 </div>
 <span class="h4 text-left ">Concentration in Computational Physics</span>
 
