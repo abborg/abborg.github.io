@@ -6,14 +6,17 @@ permalink: /about/
 <div class="about">
 <div id="resume" markdown="1">
 
-## Experience <a href="experience"></a>
+## Experience 
+<a href="experience"></a>
 
-### Software Developer
-
+### Software Developer 
+<a href="software-dev"></a> 
 <div class="inline-header">
-	<span class="h3 text-left">Infinite Convergence Solutions</span>
+	<span class="h3 text-left">kCura</span>
 	<em class="text-right">May 2017 to Present</em>
 </div>
+
+---
 
 <div class="inline-header">
 	<span class="h3 text-left">Infinite Convergence Solutions</span>
@@ -32,6 +35,8 @@ permalink: /about/
 - Produced documentation for knowledge base  
 - Created troubleshooting guides and support articles for users  
 
+---
+
 <div class="inline-header">
 	<span class="h3 text-left">The Dow Chemical Company</span>
 	<em class="text-right">January 2013 to December 2013</em>
@@ -43,7 +48,8 @@ permalink: /about/
 - Created new user interface using JQuery and KnockoutJS
 - Provided useful data presentation to users with Highcharts
 
-### Technology Consultant
+### Technology Consultant 
+<a href="tech-consultant"></a>
 
 <div class="inline-header">
 	<span class="h3 text-left">Montini Catholic High School</span>
@@ -52,7 +58,8 @@ permalink: /about/
 - Extended the wireless infrastructure of the school by expanding wired network and installing access points  
 - Wrote Python scripts to generate user identifications and credentials
 
-### Technologies
+### Technologies 
+<a href="technologies"></a>
 
 ##### **Proficient with:** Windows and Linux Operating Systems, Git, Subversion, Java, Javascript, CSS, HTML, C, C#, C++, JQuery, Knockoutjs, Angularjs, Visual Studio, Microsoft Office and Adobe Creative Suites
 
@@ -68,7 +75,8 @@ permalink: /about/
 
 <div id="education" markdown="1">
 
-## Education <a href="education"></a>
+## Education 
+<a href="education"></a>
 
 ### **University of Illinois at Urbana-Champaign**
 
@@ -86,15 +94,18 @@ permalink: /about/
 
 <br/>
 
-### Courses <a href="courses"></a>
+### Courses 
+<a href="courses"></a>
 
-#### Mathematics: <a href="mathematics"></a>
+#### Mathematics: 
+<a href="mathematics"></a>
 
 * Introduction to Differential Equations (Math 285)
 * Applied Linear Algebra (Math 415)
 * Statistics and Probability (Math 463)
 
-#### Physics:  <a href="physics"></a>
+#### Physics:  
+<a href="physics"></a>
 
 * Relativity & Math Applications (Phys 225)
 * Classical Mechanics I (Phys 325)
@@ -105,7 +116,8 @@ permalink: /about/
 * Electromagnetic Fields I (Phys 435)
 * Quantum Physics I (Phys 486)
 
-#### Computer Science:  <a href="computer-science"></a>
+#### Computer Science: 
+<a href="computer-science"></a>
 
 * Discrete Structures (CS 173)
 * Data Structures (CS 225)
@@ -123,7 +135,8 @@ permalink: /about/
 * User Interface Design (CS 465)
 * Scientific Visualization (CS 519)
 
-#### Electrical & Computer Engineering: <a href="elec-comp-engi"></a>
+#### Electrical & Computer Engineering: 
+<a href="elec-comp-engi"></a>
 
 * Ethics and Engineering (ECE 316)
 </div>

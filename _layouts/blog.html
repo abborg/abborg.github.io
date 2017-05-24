@@ -21,6 +21,14 @@
                 <p>
                   {{ post.excerpt }}
                 </p>
+                {% if post.categories.length > 1 %}
+                <h5>
+                tags: 
+                {% for category in post.categories %}
+                    <span class="category">{{category | downcase }}</span>
+                {% endfor %}
+                </h5>
+                {% endif %}
                 <h4><a href="{{ post.url | prepend: site.baseurl }}">
                   Read More!
                   </a>
