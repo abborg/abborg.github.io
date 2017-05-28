@@ -37,6 +37,7 @@ $on-laptop:        800px;
 
 $active-nav-color: lightgrey;
 $foodtime-color:   lightblue;
+$flashlearn-color: darken(lightcyan, 8%);
 $g2km-color:	   lightgreen;
 $nocturna-color:   lightcoral;
 $stellar-color:	   lightsalmon;
@@ -44,6 +45,7 @@ $lotor-color:	   darken(lightgoldenrodyellow, 8%);
 
 $active-nav-color-light: lighten(lightgrey, 5%);
 $foodtime-color-light:   lighten(lightblue, 5%);
+$flashlearn-color-light: lightcyan;
 $g2km-color-light:	   lighten(lightgreen, 5%);
 $nocturna-color-light:   lighten(lightcoral, 5%);
 $stellar-color-light:	   lighten(lightsalmon, 5%);
@@ -51,12 +53,13 @@ $lotor-color-light:	   lightgoldenrodyellow;
 
 $active-nav-color-dark: darken(lightgrey, 5%);
 $foodtime-color-dark:   darken(lightblue, 5%);
+$flashlearn-color-dark: darken(lightcyan, 16%);
 $g2km-color-dark:	   darken(lightgreen, 5%);
 $nocturna-color-dark:   darken(lightcoral, 5%);
 $stellar-color-dark:	   darken(lightsalmon, 5%);
-$lotor-color-dark:	   darken(lightgoldenrodyellow, 12%);
+$lotor-color-dark:	   darken(lightgoldenrodyellow, 16%);
 
-$slice-height:	   75px;
+$card-height:	   75px;
 
 // Use media queries like this:
 // @include media-query($on-palm) {

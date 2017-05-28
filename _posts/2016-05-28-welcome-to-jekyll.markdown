@@ -2,7 +2,8 @@
 layout: post
 title:  "Hello, World!"
 date:   2016-05-28 22:15:18 -0500
-categories: jekyll update
+categories: meta
+tags: jekyll update
 ---
 
 This blog is a place for me to discuss things that I think are important, interesting, or frustrating. I may talk about work, personal projects, ideas, or many other topics.

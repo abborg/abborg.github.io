@@ -14,22 +14,23 @@
             {% for post in site.posts %}
               <li>
                 <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
                 <h2>
                   <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                  {%if post.categories.length > 1%}<h6 class="categories">{%for category in post.categories %}{{category}}{% endfor %}</h6>{% endif %}
                 </h2>
                 <p>
                   {{ post.excerpt }}
                 </p>
-                {% if post.categories.length > 1 %}
+                {% if post.tags.length != 0 %}
                 <h5>
                 tags: 
-                {% for category in post.categories %}
-                    <span class="category">{{category | downcase }}</span>
+                {% for tag in post.tags %}
+                    <span class="tags">{{tag | downcase }}</span>
                 {% endfor %}
                 </h5>
                 {% endif %}
-                <h4><a href="{{ post.url | prepend: site.baseurl }}">
+                <h4>
+                    <a href="{{ post.url | prepend: site.baseurl }}">
                   Read More!
                   </a>
                 </h4>

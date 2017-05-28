@@ -8,6 +8,17 @@
 	}
 }
 
+.FlashLearn {
+    background-color: $flashlearn-color-light;
+    &:hover {
+        background-color: $flashlearn-color;
+        & a {
+            color: $flashlearn-color-light;
+        }
+    }
+}
+
+
 .G2KM {
 	background-color: $g2km-color-light;
 	&:hover {
@@ -66,7 +77,7 @@ a, a:hover, a:visited, a:active {
     margin: 1em;
     box-shadow: 0 0 1em 0.25em $other-color-dark;
     color: $transparent;
-	line-height: $slice-height;
+	line-height: $card-height;
     overflow:hidden;
     z-index:1;
     &>a{
@@ -83,36 +94,5 @@ a, a:hover, a:visited, a:active {
         &>img{
             opacity: 0.5;
         }
-	}
-	&::before {
-//		content: ' ';
-		display: block;
-	  	position: absolute;
-	  	width: 20px;
-        height:100%;
-	  	top:0;
-	  	left:0;
-	  	@include gradient(right, $other-color-light);
-		transition: width 0.5s;
-	}
-
-	&::after {
-//		content: ' ';
-		display: block;
-	 	position: absolute;
-	 	bottom:0;
-	 	right:0;
-	  	width: 20px;
-	  	height: 100%;
-	  	@include gradient(left, $other-color-light);
-		transition: width 0.5s;
-	}
-	&:hover {
-		&::before {
-			width: 8px;
-		}
-		&::after {
-			width: 8px;
-		}
 	}
 }

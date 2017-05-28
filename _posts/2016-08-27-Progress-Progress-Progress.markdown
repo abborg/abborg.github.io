@@ -2,7 +2,8 @@
 layout: post
 title:  "Progress, Progress, Progress..."
 date:   2016-08-27 14:47:00 -0500
-categories: projects Progress things
+categories: ruminations
+tags: projects Progress things
 ---
 
 Development of any project takes time, dedication, effort, and a little bit of luck; I include luck simply because all the time, dedication and effort doesn't mean anything if you aren't in a position to leverage that towards 'Progress'.

@@ -4,7 +4,8 @@ title:  "Stellar Reaction"
 name:  "Stellar-Reaction"
 date:   2016-5-19 22:15:18 -0500
 status: 2
-categories: C++
+categories: coursework
+tags: C++
 ---
 
 Stellar Reaction is a C++ project created by [Leon Frickensmith](https://github.com/Strikerklm96) that my group worked to develop as part of our CS 428 course in Software Engineering.
