@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}
+
+    <div class="page-content">
+      <div class="wrapper">
+        {% for tag in site.tags %}
+          {% for post in tag %}
+            {{post.content}}
+          {% endfor %}
+        {% endfor %}
+      </div>
+    </div>
+
+    {% include footer.html %}
+
+  </body>
+
+</html>
