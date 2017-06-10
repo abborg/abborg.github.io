@@ -15,6 +15,11 @@ permalink: /about/
 	<span class="h3 text-left">kCura</span>
 	<em class="text-right">May 2017 to Present</em>
 </div>
+**Relativity** Leader in the eDiscovery Review Field
+
+ * Developing backend processing algorithms in C# and VB
+ * Fixing processing errors
+ * Relativity Certified Administrator
 
 ---
 

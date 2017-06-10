@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Hello, World!"
-date:   2016-05-28 22:15:18 -0500
+title: "Hello, World!"
+date: 2016-05-28 22:15:18 -0500
 categories: meta
 tags: jekyll update
 ---

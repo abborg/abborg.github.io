@@ -6,23 +6,52 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 24 May 2017 02:20:56 -0500</pubDate>
-    <lastBuildDate>Wed, 24 May 2017 02:20:56 -0500</lastBuildDate>
+    <pubDate>Sat, 10 Jun 2017 07:03:31 -0500</pubDate>
+    <lastBuildDate>Sat, 10 Jun 2017 07:03:31 -0500</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
+    
+      <item>
+        <title>Nothingness in C# and Visual Basic</title>
+        <description>
+</description>
+        <pubDate>Fri, 09 Jun 2017 20:00:00 -0500</pubDate>
+        <link>http://localhost:4000/programming/2017/06/09/nothingness-in-C-and-VB.html</link>
+        <guid isPermaLink="true">http://localhost:4000/programming/2017/06/09/nothingness-in-C-and-VB.html</guid>
+        
+        <category>code</category>
+        
+        <category>C#</category>
+        
+        <category>VB</category>
+        
+        <category>Nothing</category>
+        
+        <category>null</category>
+        
+        
+        <category>programming</category>
+        
+      </item>
     
       <item>
         <title>Starting Work</title>
         <description>&lt;p&gt;Looks like I’m starting to work; much less of a change of pace than had been suggested by others. Perhaps it is the current responsibilities of my work or a honeymoon period, but I hope that the future will bring a wealth of new experiences and knowledge.&lt;/p&gt;
 </description>
-        <pubDate>Wed, 24 May 2017 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/2017/05/24/starting-work.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/05/24/starting-work.html</guid>
+        <pubDate>Wed, 24 May 2017 07:47:00 -0500</pubDate>
+        <link>http://localhost:4000/blog/2017/05/24/starting-work.html</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2017/05/24/starting-work.html</guid>
         
+        <category>work</category>
+        
+        <category>life</category>
+        
+        
+        <category>blog</category>
         
       </item>
     
       <item>
-        <title>Progress, Progress, Progress...</title>
+        <title>Thoughts on Progress...</title>
         <description>&lt;p&gt;Development of any project takes time, dedication, effort, and a little bit of luck; I include luck simply because all the time, dedication and effort doesn’t mean anything if you aren’t in a position to leverage that towards ‘Progress’.
 &lt;!--more--&gt;
 Progress is so enticing for many developers nowadays. There exists the question in my mind whether Progress is always ‘progressive’, or regressive. If one thinks about the nature of things, they come to realize that circumstances can be better or worse; but, sometimes for the position one finds themself in, things can only be so good or so bad. What’s important though, is to recognize when Progress is driving a project towards a higher high through a bit of regression rather than completely working against itself.&lt;/p&gt;
@@ -44,15 +73,15 @@ Progress is so enticing for many developers nowadays. There exists the question 
 &lt;p&gt;We have to avoid string towards Progress at all costs, and realize when any ‘improvements’ to a product would hinder it; because sometimes, good enough is just good enough.&lt;/p&gt;
 </description>
         <pubDate>Sat, 27 Aug 2016 14:47:00 -0500</pubDate>
-        <link>http://localhost:4000/projects/progress/things/2016/08/27/Progress-Progress-Progress.html</link>
-        <guid isPermaLink="true">http://localhost:4000/projects/progress/things/2016/08/27/Progress-Progress-Progress.html</guid>
-        
+        <link>http://localhost:4000/blog/2016/08/27/Thoughts-On-Progress.html</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2016/08/27/Thoughts-On-Progress.html</guid>
         
         <category>projects</category>
         
         <category>Progress</category>
         
-        <category>things</category>
+        
+        <category>blog</category>
         
       </item>
     
@@ -66,13 +95,15 @@ Progress is so enticing for many developers nowadays. There exists the question 
 &lt;p&gt;If you’re interested in learning more about me or my work, shoot me an email at &lt;a href=&quot;mailto:andrew.b.borg@gmail.com&quot;&gt;andrew.b.borg@gmail.com&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Sat, 28 May 2016 22:15:18 -0500</pubDate>
-        <link>http://localhost:4000/jekyll/update/2016/05/28/welcome-to-jekyll.html</link>
-        <guid isPermaLink="true">http://localhost:4000/jekyll/update/2016/05/28/welcome-to-jekyll.html</guid>
-        
+        <link>http://localhost:4000/meta/2016/05/28/welcome-to-jekyll.html</link>
+        <guid isPermaLink="true">http://localhost:4000/meta/2016/05/28/welcome-to-jekyll.html</guid>
         
         <category>jekyll</category>
         
         <category>update</category>
+        
+        
+        <category>meta</category>
         
       </item>
     
