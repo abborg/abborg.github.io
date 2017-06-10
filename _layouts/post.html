@@ -24,14 +24,20 @@
     {% include header.html %}
     <div class="page-content">
       <div class="wrapper">
+        <div><h1>{{page.title}}</h1><small style="text-align:right;">{{page.date | date_to_string}}</small></div>
         {{ content }}
-        <div>
+        <hr/>
+        <div style="text-align:center;">
     		Also see some other things I've written:
-    		{% for post in site.related_posts %}
-    			<a href="{{site.url}}{{post.path}}">post.title</a>
-          {{ category_content }}
-          {{ tags_content }}
+        {% assign posts = site.posts | sample: 3 | sort: 'date' | reverse %}
+        {% for post in posts %}
+          {% unless post == page %}
+          <div style="text-align:right;">
+    			<small><a href="{{site.url | append: post.url}}">{{post.title}}</a></small>
+          </div>
+          {% endunless %}
     		{% endfor %}
+        </ul>
     	</div>
       </div>
     </div>
