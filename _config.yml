@@ -27,6 +27,37 @@ excerpt_separator: <!--more-->
 markdown: kramdown
 highlights: rouge
 
+defaults:
+  -
+    scope:
+      path: ""
+      type: pages
+    values:
+      layout: page
+  -
+    scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+  -
+    scope:
+      path: ""
+      type: my_categories
+    values:
+      layout: categories
+  -
+    scope:
+      path: ""
+      type: my_tags
+    values:
+      layout: tags
+  -
+    scope:
+      path: "project"
+    values:
+      layout: project
+
 collections:
   projects:
     output: true
@@ -34,9 +65,7 @@ collections:
     permalink: /projects/:title
   my_tags:
     output: true
-    layout: tags
     permalink: /tags/:name
   my_categories:
     output: true
-    layout: categories
     permalink: /categories/:name

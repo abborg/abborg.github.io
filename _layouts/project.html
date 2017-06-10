@@ -26,13 +26,13 @@
       <div class="wrapper">
         {{ content }}
         <div>
-    		Also see some other things I've written:
-    		{% for post in site.related_posts %}
-    			<a href="{{site.url}}{{post.path}}">post.title</a>
+        Also see some other things I've written:
+        {% for post in site.related_posts %}
+          <a href="{{site.url}}{{post.path}}">post.title</a>
           {{ category_content }}
           {{ tags_content }}
-    		{% endfor %}
-    	</div>
+        {% endfor %}
+      </div>
       </div>
     </div>
 

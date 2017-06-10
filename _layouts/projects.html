@@ -4,7 +4,24 @@
   {% include head.html %}
 
   <body>
+    {% assign post = project %}
+    {% assign category = site.my_categories | where: "name", page.categories %}
+    {% assign category = category[0] %}
+    {% if category %}
+    {% capture category_content %}<a class="label" href="{{ category.url }}">{{ category.name }}</a>{% endcapture %}
+    {% endif %}
 
+    {% if post.tags.size > 0 %}
+      {% capture tags_content %} with <span class="icon-price-tag{% if post.tags.size > 1 %}s{% endif %}"></span>: {% endcapture %}
+      {% for post_tag in post.tags %}
+        {% assign tag = site.my_tags | where: "name", post_tag %}
+        {% if tag %}
+          {% assign tag = tag[0] %}
+          {% capture tags_content_temp %}{{ tags_content }}<a href="{{ tag.url }}">{{ tag.name }}</a>{% if forloop.last == false %}, {% endif %}{% endcapture %}
+          {% assign tags_content = tags_content_temp %}
+        {% endif %}
+      {% endfor %}
+    {% endif %}
     {% include header.html %}
 
     <div class="page-content">
