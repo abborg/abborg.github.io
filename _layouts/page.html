@@ -1,11 +1,18 @@
----
-layout: default
-permalink: pretty
----
-<article class="post">
-
-  <div class="post-content">
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+<body>
+{% include header.html %}
+<div class="page">
+ 
+  <div class="page-content">
+  	<div class="wrapper">
     {{ content }}
+    </div>
   </div>
 
-</article>
+</div>
+{% include footer.html %}
+</body>
+</html>
+

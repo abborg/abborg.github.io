@@ -4,7 +4,7 @@ title:  "Lotor Keyboard"
 name: "Lotor-Keyboard"
 date:   2016-05-28 22:15:18 -0500
 status: 1
-categories: side-project
+category: side-project
 tags: keyboard embedded C
 ---
  

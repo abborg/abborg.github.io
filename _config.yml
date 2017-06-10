@@ -17,6 +17,9 @@ url: "http://abborg.github.io" # the base hostname & protocol for your site
 github_username:  abborg
 github_avatar: "https://avatars2.githubusercontent.com/u/5313400"
 linkedin_url: "https://www.linkedin.com/in/andrew-borg-0948017a"
+strict_front_matter: true
+
+permalink: /blog/:year/:month/:day/:title/
 
 excerpt_separator: <!--more-->
 
@@ -27,4 +30,13 @@ highlights: rouge
 collections:
   projects:
     output: true
+    layout: post
     permalink: /projects/:title
+  my_tags:
+    output: true
+    layout: tags
+    permalink: /tags/:name
+  my_categories:
+    output: true
+    layout: categories
+    permalink: /categories/:name

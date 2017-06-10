@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}
+    <div class="page-content">
+      <div class="wrapper">
+        <p id="post-meta">{{ category_content }}</p>
+        {% if site.categories.size > 0 %}
+        <ul>
+        {% for category in site.categories %}
+          <li>
+            <a href="{{site.url}}/categories/{{category[0]}}">{{ category[0] }}<span> ({{category[1].size}})</span></a>
+          </li>
+        {% endfor %}
+        </ul>
+        {% else %}
+        <h2>No posts with cateogries :(</h2>
+        {% endif%}
+      </div>
+    </div>
+
+    {% include footer.html %}
+
+  </body>
+
+</html>

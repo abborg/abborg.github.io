@@ -10,7 +10,8 @@
     <div class="page-content">
       <div class="wrapper">
         {{ content }}
-        {% for post in site.posts %}
+        {% assign posts = site.posts | sample: 3 | sort: 'date' | reverse %}
+        {% for post in posts %}
             <h2>
               <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
             </h2>

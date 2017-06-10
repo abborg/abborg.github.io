@@ -4,7 +4,7 @@ title:  "Foodtime"
 name:  "Foodtime"
 date:   2014-12-10 22:15:18 -0500
 status: 2
-categories: coursework
+category: coursework
 tags: Android Java
 ---
 

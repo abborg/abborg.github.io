@@ -1,16 +1,31 @@
----
-layout: default
-permalink: pretty
----
-<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+<!DOCTYPE html>
+<html>
+  {% assign category = site.my_categories | where: "name", post.category %}
+  {% assign category = category[0] %}
+  {% if category %}
+  {% capture category_content %}<a class="label" href="{{ category.url }}">{{ category.name }}</a>{% endcapture %}
+  {% endif %}
+  {% include head.html %}
 
-  <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
-    <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
-  </header>
+  <body>
 
-  <div class="post-content" itemprop="articleBody">
-    {{ content }}
-  </div>
+    {% include header.html %}
 
-</article>
+    <div class="page-content">
+      <div class="wrapper">
+        {{ content }}
+        <div>
+    		Also see some other things I've written:
+    		{% for post in site.related_posts %}
+    			<a href="{{site.url}}{{post.path}}">post.title</a>
+    		{% endfor %}
+    	</div>
+      </div>
+    </div>
+
+
+    {% include footer.html %}
+
+  </body>
+
+</html>

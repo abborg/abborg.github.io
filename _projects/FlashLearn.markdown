@@ -4,7 +4,7 @@ title:  "FlashLearn"
 name:  "FlashLearn"
 date:   2017-05-23 22:15:18 -0500
 status: 2
-categories: side-project 
+category: side-project 
 tags: Android Java
 ---
 
