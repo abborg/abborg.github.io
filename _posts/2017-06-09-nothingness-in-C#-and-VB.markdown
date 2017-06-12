@@ -5,6 +5,8 @@ date: 2017-06-09 20:00:00 -0500
 category: programming
 tags: code CSharp VB Nothing null
 published: true
+excerpt: "Modern programming languages tend to have two different classes of types: value types and reference types. Value types are simple concepts that can be written as a single value. For instance, some value types are: integers that have values like `3`, booleans that have values like `true`, characters that have values like `A`. Reference types are pointers that _refer_ to an object that is more complex than a singular value. You might have a car object that contains a number of value types combined into a single reference.
+"
 ---
 
 * [Value and Reference Types](#value-and-reference-types)
@@ -95,13 +97,13 @@ Char cha = (Char)num; // Set cha to H
 {% highlight VB linenos %}
 
 ' Visual Basic
-Dim i As Integer = Int16.MaxValue // Set i to max value of Int16: 32,767 (or in hex 0x7FFF)
-Dim j As Integer = CType(i, Int32) // Set j to 32,767, but now max value is 2,147,483,647(or in hex 0x7FFFFFFF)
-Dim k As Integer = DirectCast(j, Int64)	// Set h to 32,767, but now max value is 9,223,372,036,854,775,807 (or in hex 0x7FFFFFFFFFFFFFFF)
+Dim i As Integer = Int16.MaxValue ' Set i to max value of Int16: 32,767 (or in hex 0x7FFF)
+Dim j As Integer = CType(i, Int32) ' Set j to 32,767, but now max value is 2,147,483,647(or in hex 0x7FFFFFFF)
+Dim k As Integer = DirectCast(j, Int64)	' Set h to 32,767, but now max value is 9,223,372,036,854,775,807 (or in hex 0x7FFFFFFFFFFFFFFF)
 
-Dim num As Integer = 72; // Set num to 72
-Dim cha As Char = Chr(num) // Convert Ascii character code to cha to H
-Dim val As Integer = Asc(cha) // Convert character back to Ascii character code 72
+Dim num As Integer = 72 ' Set num to 72
+Dim cha As Char = Chr(num) ' Convert Ascii character code to cha to H
+Dim val As Integer = Asc(cha) ' Convert character back to Ascii character code 72
 
 {% endhighlight %}
 
@@ -138,10 +140,10 @@ void Main(string[] args)
 
 Line 11 is where the issue occurs. Attempting to cast from `Nothing` to a value type seems like an easy casting in C#. As mentioned before, in Visual Basic `Nothing` refers to a value of `0` for value types and `null` for reference types; so why is there a `NullReferenceException` occuring? The `Nothing` keyword and concept only exist in Visual Basic. Once the library function `ReturnNothing` returns the `Nothing` object from Visual Basic, it is cast to the variable type used to accept it in C#. Since the variable type used to hold the return value of `Nothing` is an `Object` (or any reference type), `Nothing` is converted to a `null` value. From there, casting it to a non-nullable value type will by definition cause a `NullReferenceException` at run-time.
 
-The issue can be more clearly seen by simplifying the situation; remove the call to Visual Basic and attempt to simply cast `null` to a value type.
+The issue can be more clearly seen by simplifying the situation; remove the call to Visual Basic and attempt to simply cast `null` to a value type: a compiler error will arise.
 
 {% highlight C# linenos %}
-SampleEnum val = (SampleEnum)null; // Compile-time NullReferenceException occurs here
+SampleEnum val = (SampleEnum)null; // Compiler error occurs here
 {% endhighlight %}
 
 Testing the different possible object types for the variable to accept the returned `Nothing` exposes what .Net is doing when converting between Visual Basic and C#; examine the results when the variable is an `Object`, a non-nullable value type, and a nullable value type.
@@ -173,7 +175,7 @@ void Main(string[] args)
 
 A Safe Solution
 ---------------
-If casting from `Nothing` to a C# types, there is a simple and safe way to generically cast between nothing and both reference and value types. Using a generic type, a function can be written that will either cast between the types or return the default value for the desired type. One such generic function can be seen below; though, in order to perfrom conversions from one reference type to another, there must still be an explicitly defined casting function - this generic cast function cannot avoid that necessity.
+If casting from `Nothing` to C# types, there is a simple and safe way to generically cast between nothing and both reference and value types. Using a generic type, a function can be written that will either cast between the types or return the default value for the desired type. One such generic function can be seen below; though, in order to perfrom conversions from one reference type to another, there must still be an explicitly defined casting function - this generic cast function cannot avoid that necessity.
 
 {% highlight C# linenos %}
 T TryGetValueOrDefault<T>(Object val) {

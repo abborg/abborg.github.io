@@ -59,6 +59,16 @@
 	}
 }
 
+.Blogcode {
+	background-color: $blogcode-color-light;
+	&:hover {
+		background-color: $blogcode-color;
+		& a {
+			color: $blogcode-color-light;
+		}
+	}
+}
+
 a, a:hover, a:visited, a:active {
 	color: inherit;
 	transition: color 0.5s;

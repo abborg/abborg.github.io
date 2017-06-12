@@ -21,9 +21,11 @@ layout: default
           <div class="list-group">
         {% endif %}
       {% endunless %}
+      <div style="border-top: 1px solid grey;border-bottom: 1px solid grey;border-collapse: true;">
       <a href="{{ post.url }}" class="list-group-item">
         <h4 class="list-group-item-heading h6">{{ post.title }}</h4>
       </a>
+      </div>
       {% if forloop.last %}
         </div>
       {% endif %}
