@@ -5,8 +5,7 @@ date: 2017-06-09 20:00:00 -0500
 category: programming
 tags: code CSharp VB Nothing null
 published: true
-excerpt: "Modern programming languages tend to have two different classes of types: value types and reference types. Value types are simple concepts that can be written as a single value. For instance, some value types are: integers that have values like `3`, booleans that have values like `true`, characters that have values like `A`. Reference types are pointers that _refer_ to an object that is more complex than a singular value. You might have a car object that contains a number of value types combined into a single reference.
-"
+excerpt: "Modern programming languages tend to have two different classes of types: value types and reference types. Value types are simple concepts that can be written as a single value. For instance, some value types are: integers that have values like `3`, booleans that have values like `true`, characters that have values like `A`. Reference types are pointers that _refer_ to an object that is more complex than a singular value. You might have a car object that contains a number of value types combined into a single reference. In certain languages - including C# and VB.Net - there exists the concept of nullable value types. These nullable value types may be `null` prior to being set, but cannot be re-set to `null`. These types allow for variables that may be unset, but once set must have a valid value."
 ---
 
 * [Value and Reference Types](#value-and-reference-types)
@@ -21,7 +20,7 @@ excerpt: "Modern programming languages tend to have two different classes of typ
 
 Value and Reference Types
 -------------------------
-Modern programming languages tend to have two different classes of types: value types and reference types. Value types are simple concepts that can be written as a single value. For instance, some value types are: integers that have values like `3`, booleans that have values like `true`, characters that have values like `A`. Reference types are pointers that _refer_ to an object that is more complex than a singular value. You might have a car object that contains a number of value types combined into a single reference.
+Modern programming languages tend to have two different classes of types: value types and reference types. Value types are simple concepts that can be written as a single value. For instance, some value types are: integers that have values like `3`, booleans that have values like `true`, characters that have values like `A`. Reference types are pointers that _refer_ to an object that is more complex than a singular value. You might have a car object that contains a number of value types combined into a single reference. In certain languages - including C# and VB.Net - there exists the concept of nullable value types. These nullable value types may be `null` prior to being set, but cannot be re-set to `null`. These types allow for variables that may be unset, but once set must have a valid value.
 
 <a href="#empty-values"/>
 
@@ -36,7 +35,7 @@ Car volvo = new Car(); // Properly initializes the car object instance and can b
 
 int miles; // Declares the integer value type, but gives no value; miles is set to 0.
 int? feet; // Declares the Nullable integer reference type, but gives it no value; feet is set to null.
-int feet = 12; // Properly declares the integer value type and defines a non-empty value.  
+int inches = 12; // Properly declares the integer value type and defines a non-empty value.  
 	
 {% endhighlight %}
 
@@ -45,7 +44,7 @@ int feet = 12; // Properly declares the integer value type and defines a non-emp
 Dim ferrari As Car' Declares a reference, but does not refer to any Car object instance; bmw has value of Nothing.
 Dim ford As Car = new Car() ' Properly initializes the car object instance and can be referred to later.
 
-Dim kilometers As Integer ' Declares the integer value type, but gives no value; miles is set to Nothing.
+Dim kilometers As Integer ' Declares the integer value type, but gives no value; kilometers is set to Nothing.
 Dim centimeters As Integer = 100 ' Properly declares the integer value type and defines a non-empty value.  
 
 {% endhighlight %}
@@ -58,7 +57,7 @@ One of the most important and useful value types are enumerations. Enumerations 
 
 {% highlight c# linenos %}
 // C#
-// Define an enumeration with three constants, explicityly setting the values of the constants.
+// Define an enumeration with three constants, explicitly setting the values of the constants.
 enum FooType
 {
 	Foo = 0,
@@ -138,7 +137,7 @@ void Main(string[] args)
 }
 {% endhighlight %}
 
-Line 11 is where the issue occurs. Attempting to cast from `Nothing` to a value type seems like an easy casting in C#. As mentioned before, in Visual Basic `Nothing` refers to a value of `0` for value types and `null` for reference types; so why is there a `NullReferenceException` occuring? The `Nothing` keyword and concept only exist in Visual Basic. Once the library function `ReturnNothing` returns the `Nothing` object from Visual Basic, it is cast to the variable type used to accept it in C#. Since the variable type used to hold the return value of `Nothing` is an `Object` (or any reference type), `Nothing` is converted to a `null` value. From there, casting it to a non-nullable value type will by definition cause a `NullReferenceException` at run-time.
+Line 11 is where the issue occurs. Attempting to cast from `Nothing` to a value type seems like an easy casting in C#. As mentioned before, in Visual Basic `Nothing` refers to a value of `0` for value types and `null` for reference types; so why is there a `NullReferenceException` occuring? The `Nothing` keyword and concept only exist in Visual Basic. Once the library function `ReturnNothing` returns the `Nothing` _Object_ from Visual Basic, it is cast to the type used in the function signature. Since the type of the function returning `Nothing` returns an `Object` (or any other reference type), the `Nothing` is converted to a `null` value. From there, casting it to a non-nullable value type will by definition cause a `NullReferenceException` at run-time.
 
 The issue can be more clearly seen by simplifying the situation; remove the call to Visual Basic and attempt to simply cast `null` to a value type: a compiler error will arise.
 
@@ -146,7 +145,7 @@ The issue can be more clearly seen by simplifying the situation; remove the call
 SampleEnum val = (SampleEnum)null; // Compiler error occurs here
 {% endhighlight %}
 
-Testing the different possible object types for the variable to accept the returned `Nothing` exposes what .Net is doing when converting between Visual Basic and C#; examine the results when the variable is an `Object`, a non-nullable value type, and a nullable value type.
+Testing the different possible object types for the variable to accept the returned `Nothing` exposes what .Net is doing when converting between Visual Basic and C#; examine the results when the function returns Visual Basic function returns a non-nullable value type, a nullable value type, and an `Object`.
 
 {% highlight VB linenos %}
 Module Library
@@ -175,13 +174,10 @@ void Main(string[] args)
 
 A Safe Solution
 ---------------
-If casting from `Nothing` to C# types, there is a simple and safe way to generically cast between nothing and both reference and value types. Using a generic type, a function can be written that will either cast between the types or return the default value for the desired type. One such generic function can be seen below; though, in order to perfrom conversions from one reference type to another, there must still be an explicitly defined casting function - this generic cast function cannot avoid that necessity.
+If casting from `Nothing` to C# types, there is a simple and safe way to generically cast between nothing and value types. Using a generic type, a function can be written that will either cast between the types or return the default value for the desired value type. One such generic function can be seen below; though, in order to perfrom conversions from one reference type to another, there must still be an explicitly defined casting function - this generic cast function cannot avoid that necessity.
 
 {% highlight C# linenos %}
 T TryGetValueOrDefault<T>(Object val) {
-	if(T is Nullable){
-		return val;
-	}
 	if(val != null){
 	 	if (val is Enum && !Enum.IsDefined(typeof(T), val)))
 	 		default(T);
@@ -191,7 +187,7 @@ T TryGetValueOrDefault<T>(Object val) {
 	return default(T);
 }
 {% endhighlight %}
-In this function if the type `T` is `Nullable`, the value `val` given as an argument is simply returned. Otherwise, the value `val` is tested for `null` and if that check fails, the default value for type `T` is returned. However, in the case that `T` is non-nullable and `val` is not `null`, `val` is tested on whether it is of an `Enum` type and has a constant defined for the given value, `val`. If so, an exception free cast can be done; if not, then the default of type `T` is returned instead. This function can safely and generically cast between value types.
+In this function, the value `val` is tested for `null` and if that check fails, the default value for type `T` is returned. However, in the case that `val` is not `null`, `val` is tested on whether it is of an `Enum` type and has a constant defined for the given value, `val`. If so, a valid cast can be done; if not, then the default of type `T` is returned instead. This function can safely and generically cast between `Nothing` and value types.
 
 <a href="#sample-code"></a>
 
