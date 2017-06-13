@@ -1,33 +1,15 @@
-<!DOCTYPE html>
-<html>
-  {% include head.html %}
-  <body class="blog">
-    {% include header.html %}
-    <div class="page-content">
-      <div class="wrapper">
-          {{ content }}
-          <ul class="post-list">
-            {% for post in site.posts %}
-              <li>
-                <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-                <h2>
-                  <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-                  <small>{%if post.categories.size%}{%for category in post.categories %}<a href="{{site.url}}/categories/{{post.categories}}">{{category}}{% endfor %} {% endif %}</a></small>
-                </h2>
-                <p>
-                  {{ post.excerpt | markdownify }}
-                </p>
-
-                <h4>
-                  <a href="{{ post.url | prepend: site.baseurl }}">
-                  Read More!
-                  </a>
-                </h4>
-              </li>
-            {% endfor %}
-          </ul>
-      </div>
+---
+layout: default
+---
+<div class="blog">
+  <div class="page-content">
+    <div class="wrapper">
+        {{ content }}
+        <ul class="post-list">
+          {% for post in site.posts %}
+            {% include post.html %}
+          {% endfor %}
+        </ul>
     </div>
-    {% include footer.html %}
-  </body>
-</html>
+  </div>
+</div>

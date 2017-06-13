@@ -18,9 +18,9 @@
             <p>
               {{ post.excerpt | markdownify }}
             </p>
-            <h4><a href="{{ post.url | prepend: site.baseurl }}">
+            <h4><strong><a href="{{ post.url | prepend: site.baseurl }}">
               Read More!
-              </a>
+              </a></strong>
             </h4>
         {% endfor %}
       </div>

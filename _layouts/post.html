@@ -1,52 +1,41 @@
-<!DOCTYPE html>
-<html>
-  {% include head.html %}
+---
+layout: default
+---
+{% assign category = site.my_categories | where: "name", page.categories %}
+{% assign category = category[0] %}
+{% if category %}
+{% capture category_content %}<a class="label" href="{{ category.url }}">{{ category.name }}</a>{% endcapture %}
+{% endif %}
 
-  <body>
-    {% assign category = site.my_categories | where: "name", page.categories %}
-    {% assign category = category[0] %}
-    {% if category %}
-    {% capture category_content %}<a class="label" href="{{ category.url }}">{{ category.name }}</a>{% endcapture %}
-    {% endif %}
-
-  {% if post.tags.size > 0 %}
-    {% capture tags_content %} with <span class="icon-price-tag{% if post.tags.size > 1 %}s{% endif %}"></span>: {% endcapture %}
-    {% for post_tag in post.tags %}
-      {% assign tag = site.my_tags | where: "name", post_tag %}
-      {% if tag %}
-        {% assign tag = tag[0] %}
-        {% capture tags_content_temp %}{{ tags_content }}<a href="{{ tag.url }}">{{ tag.name }}</a>{% if forloop.last == false %}, {% endif %}{% endcapture %}
-        {% assign tags_content = tags_content_temp %}
-      {% endif %}
-    {% endfor %}
+{% if post.tags.size > 0 %}
+{% capture tags_content %} with <span class="icon-price-tag{% if post.tags.size > 1 %}s{% endif %}"></span>: {% endcapture %}
+{% for post_tag in post.tags %}
+  {% assign tag = site.my_tags | where: "name", post_tag %}
+  {% if tag %}
+    {% assign tag = tag[0] %}
+    {% capture tags_content_temp %}{{ tags_content }}<a href="{{ tag.url }}">{{ tag.name }}</a>{% if forloop.last == false %}, {% endif %}{% endcapture %}
+    {% assign tags_content = tags_content_temp %}
   {% endif %}
-
-    {% include header.html %}
-    <div class="page-content">
-      <div class="wrapper">
-        <div><h1>{{page.title}}<h4 style="text-align:right;">{{page.date | date_to_string}}</h4></h1></div>
-        <hr/>
-        <br/>
-        {{ content }}
-        <br/>
-        <hr/>
-        <h4 style="text-align: center;">Thanks for reading!</h4>
-        <h5 style="text-align:center;">If you enjoyed this you may also enjoy some other articles I've written:</h5>
-        <h5 style="text-align:center;">|
-        {% assign posts = site.posts | sample: 3 | sort: 'date' | reverse %} 
-        {% for post in posts %}
-          {% unless post == page %} 
-          	<a href="{{site.url | append: post.url}}">{{post.title}}</a> | 
-          {% endunless %}
-    		{% endfor %}
-        </h5>
-    	</div>
-      </div>
-    </div>
-
-
-    {% include footer.html %}
-
-  </body>
-
-</html>
+{% endfor %}
+{% endif %}
+<div class="page-content">
+  <div class="wrapper">
+    <div><h1>{{page.title}}<h4 style="text-align:right;">{{page.date | date_to_string}}</h4></h1></div>
+    <hr/>
+    <br/>
+    {{ content }}
+    <br/>
+    <hr/>
+    <h4 style="text-align: center;">Thanks for reading!</h4>
+    <h5 style="text-align:center;">If you enjoyed this you may also enjoy some other articles I've written:</h5>
+    <h5 style="text-align:center;">|
+    {% assign posts = site.posts | sample: 3 | sort: 'date' | reverse %} 
+    {% for post in posts %}
+      {% unless post == page %} 
+      	<a href="{{site.url | append: post.url}}">{{post.title}}</a> | 
+      {% endunless %}
+		{% endfor %}
+    </h5>
+	</div>
+  </div>
+</div>

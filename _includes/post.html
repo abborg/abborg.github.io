@@ -1,0 +1,16 @@
+<li>
+  <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+  <h2>
+    <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+  </h2>
+  <small>{%if post.categories.size%}{%for category in post.categories %}<a href="{{site.url}}/categories/{{post.categories}}">{{category}}{% endfor %}{% endif %}</a></small>
+  <p>
+    {{ post.excerpt | markdownify }}
+  </p>
+  <h4>
+    <a href="{{ post.url | prepend: site.baseurl }}">
+    Read More!
+    </a>
+  </h4>
+</li>
+<hr/>
