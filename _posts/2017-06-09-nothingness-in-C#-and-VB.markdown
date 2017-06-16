@@ -179,9 +179,8 @@ If casting from `Nothing` to C# types, there is a simple and safe way to generic
 
 {% highlight C# linenos %}
 T TryGetValueOrDefault<T>(Object val) {
-	bool isChild = typeof(T).IsSubclassOf(typeof(Enum));
 	if(val != null){
-	 	if (!isChild || (isChild && Enum.IsDefined(typeof(T), val)))
+		if (!typeof(T).IsSubclassOf(typeof(Enum)) || (typeof(T).IsSubclassOf(typeof(Enum)) && Enum.IsDefined(typeof(T), val)))
 			return (T)val;
 	}
 	return default(T);
