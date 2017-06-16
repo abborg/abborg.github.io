@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Nothingness in C# and Visual Basic"
-date: 2017-06-09 20:00:00 -0500
+date: 2017-06-09 10:00:00 -0600
 category: programming
 tags: code CSharp VB Nothing null
 published: true
