@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Nothingness in C# and Visual Basic"
-date: 2017-06-09 20:00:00 -0500
+date: 2017-06-09 00:00:00 -0600
 category: programming
 tags: code CSharp VB Nothing null
 published: true
@@ -179,9 +179,8 @@ If casting from `Nothing` to C# types, there is a simple and safe way to generic
 
 {% highlight C# linenos %}
 T TryGetValueOrDefault<T>(Object val) {
-	bool isChild = typeof(T).IsSubclassOf(typeof(Enum));
 	if(val != null){
-	 	if (!isChild || (isChild && Enum.IsDefined(typeof(T), val)))
+		if (!typeof(T).IsSubclassOf(typeof(Enum)) || (typeof(T).IsSubclassOf(typeof(Enum)) && Enum.IsDefined(typeof(T), val)))
 			return (T)val;
 	}
 	return default(T);
