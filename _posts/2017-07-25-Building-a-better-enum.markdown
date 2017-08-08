@@ -129,7 +129,7 @@ if(i + j) {
 
 Here, we see an addition (`+`) operator being invoked to add two integers. Since if-statements take boolean values, the compiler must now convert from an integer value to a boolean. The compiler is allowed to do this conversion as an additional operation. However, this is being done implicitly, so to prevent this behavior may be hidden from the programmer. As such, it may cause errors to occur. To avoid this issue - also known as the [safe bool problem](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2007/n2333.html) - we must declare our conversion operator `explicit`. The `explicit` keyword can be used on conversion operators as well as constructors. In our case we use it with a `Enum` constructor from an `int` to avoid implicit construction of undefined `Enum` values.
 
-{% hightlight C++ %}
+{% highlight C++ %}
 long i = 10L;
 int j = (int)i;
 {% endhighlight %}
