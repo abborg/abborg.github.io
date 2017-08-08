@@ -18,7 +18,8 @@ permalink: /about/
 **Relativity:** Leader in the eDiscovery Review Field
 
  * Developing backend processing algorithms in C# and VB
- * Fixing processing errors
+ * Fixing errors in imaging and processing applications
+ * Developing DevOps solutions to improve developer environments
  * Relativity Certified Administrator
 
 ---
@@ -66,7 +67,7 @@ permalink: /about/
 ### Technologies 
 <a href="technologies"></a>
 
-##### **Proficient with:** Windows and Linux Operating Systems, Git, Subversion, Java, Javascript, CSS, HTML, C, C#, C++, JQuery, Knockoutjs, Angularjs, Visual Studio, Microsoft Office and Adobe Creative Suites
+##### **Proficient with:** Windows and Linux Operating Systems, Git, Powershell, Visual Studio, C#, C++, Java, C, Javascript, Subversion, CSS, HTML, JQuery, Knockoutjs, Angularjs, Microsoft Office and Adobe Creative Suites
 
 ##### **Familiar with:** Perl, MySQL, Ruby, Mathematica
 
